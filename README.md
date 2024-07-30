@@ -8,10 +8,10 @@ Este repositorio contiene los archivos y el informe del proyecto realizado para 
     - `Presentacion_PI1.pdf`: Documento detallado con la introducción, definición del problema, metodología, resultados, y conclusiones.
 
 2. **Código Fuente**:
-    - `vrpsd_grasp.py`: Implementación del algoritmo GRASP (Greedy Randomized Adaptive Search Procedure).
-    - `split_s.py`: Procedimiento Split-S para el problema de TSP.
-    - `gurobi_partition.py`: Particionamiento de conjuntos utilizando Gurobi.
-    - `capacity_simulation.py`: Simulación de restricciones de capacidad del vehículo.
+    - `vrpsd_grasp`: Implementación del algoritmo GRASP (Greedy Randomized Adaptive Search Procedure).
+    - `split_s`: Procedimiento Split-S para el problema de TSP.
+    - `gurobi_partition`: Particionamiento de conjuntos utilizando Gurobi.
+    - `capacity_simulation`: Simulación de restricciones de capacidad del vehículo.
 
 ## Descripción del Proyecto
 
