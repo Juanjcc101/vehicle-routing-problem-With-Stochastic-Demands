@@ -6,14 +6,14 @@ Contenido del Repositorio
 Informe PDF:
 
 Presentacion_PI1.pdf: Documento detallado con la introducción, definición del problema, metodología, resultados, y conclusiones.
-Código Fuente:
 
+Código Fuente:
 vrpsd_grasp.py: Implementación del algoritmo GRASP (Greedy Randomized Adaptive Search Procedure).
 split_s.py: Procedimiento Split-S para el problema de TSP.
 gurobi_partition.py: Particionamiento de conjuntos utilizando Gurobi.
 capacity_simulation.py: Simulación de restricciones de capacidad del vehículo.
-Descripción del Proyecto
-Introducción
+
+Introducción:
 El objetivo del proyecto es optimizar las rutas de vehículos bajo incertidumbre en las demandas de los clientes. Para ello, se implementó un algoritmo comprensivo en Python que integra varias técnicas avanzadas: GRASP, Split-S y un modelo de particionamiento con Gurobi.
 
 Definición del Problema
