@@ -1,53 +1,51 @@
 # Vehicle Routing Problem With Stochastic Demands (VRPSD)
 
-Este repositorio contiene los archivos y el informe del proyecto realizado para la Práctica Investigativa I, donde se estudia y optimiza el problema de enrutamiento de vehículos con demandas estocásticas (VRPSD). El trabajo fue realizado por Juan José Castrillón y Juan Carlos Rivera, y se presenta en un formato detallado con la siguiente estructura:
+This repository contains the files and project report for the Research Practice I course, focusing on the Vehicle Routing Problem with Stochastic Demands (VRPSD). The project was carried out by Juan José Castrillón and Juan Carlos Rivera and is presented in a detailed format with the following structure:
 
-## Contenido del Repositorio
+## Repository Contents
 
-1. **Informe PDF**:
-    - `Presentacion_PI1.pdf`: Documento detallado con la introducción, definición del problema, metodología, resultados, y conclusiones.
+1. **PDF Report**:
+    - `Presentacion_PI1.pdf`: Detailed document including the introduction, problem definition, methodology, results, and conclusions.
 
-2. **Código Fuente**:
-    - `vrpsd_grasp`: Implementación del algoritmo GRASP (Greedy Randomized Adaptive Search Procedure).
-    - `split_s`: Procedimiento Split-S para el problema de TSP.
-    - `gurobi_partition`: Particionamiento de conjuntos utilizando Gurobi.
-    - `capacity_simulation`: Simulación de restricciones de capacidad del vehículo.
+2. **Source Code**:
+    - `vrpsd_grasp`: Implementation of the GRASP (Greedy Randomized Adaptive Search Procedure) algorithm.
+    - `split_s`: Split-S procedure for the TSP problem.
+    - `gurobi_partition`: Set partitioning using Gurobi.
+    - `capacity_simulation`: Simulation of vehicle capacity constraints.
 
-## Descripción del Proyecto
+## Project Description
 
-### Introducción
+### Introduction
 
-El objetivo del proyecto es optimizar las rutas de vehículos bajo incertidumbre en las demandas de los clientes. Para ello, se implementó un algoritmo comprensivo en Python que integra varias técnicas avanzadas: GRASP, Split-S y un modelo de particionamiento con Gurobi.
+The goal of the project is to optimize vehicle routes under uncertain customer demands. A comprehensive algorithm was implemented in Python, integrating advanced techniques such as GRASP, Split-S, and a partitioning model with Gurobi.
 
-### Definición del Problema
+### Problem Definition
 
-Se aborda un grafo no dirigido completo \(G = (V, E)\), donde \(V = \{0, 1, ..., n\}\) representa los nodos y \(E\) las aristas. Cada cliente \(i \in V \setminus \{0\}\) tiene una demanda estocástica \(\xi_i\), y los vehículos tienen una capacidad \(Q\). El objetivo es minimizar el costo total esperado, incluyendo costos de viaje y recargo, considerando acciones de recarga como volver al depósito o recibir asistencia de otro vehículo.
+The problem addresses a complete undirected graph \(G = (V, E)\), where \(V = \{0, 1, ..., n\}\) represents the nodes and \(E\) the edges. Each customer \(i \in V \setminus \{0\}\) has a stochastic demand \(\xi_i\), and vehicles have a capacity \(Q\). The objective is to minimize the expected total cost, including travel and overload costs, while considering recharge actions such as returning to the depot or receiving assistance from another vehicle.
 
-### Metodología
+### Methodology
 
-La metodología se compone de las siguientes fases:
+The methodology consists of the following phases:
 
-1. **Algoritmo Heurístico GRASP**: Construcción de una solución inicial y mejora mediante búsqueda local.
-2. **Procedimiento Split-S para TSP**: División de la solución TSP en sub-rutas basadas en el número de vehículos disponibles.
-3. **Particionamiento de Conjuntos con Gurobi**: Optimización de la combinación de rutas para minimizar la distancia total recorrida.
-4. **Simulación de Restricciones de Capacidad**: Simulación de la demanda utilizando una distribución normal y evaluación de dos enfoques: retorno al depósito y asistencia de vehículos cercanos.
+1. **GRASP Heuristic Algorithm**: Construction of an initial solution and improvement through local search.
+2. **Split-S Procedure for TSP**: Division of the TSP solution into sub-routes based on the number of available vehicles.
+3. **Set Partitioning with Gurobi**: Optimization of route combinations to minimize the total distance traveled.
+4. **Capacity Constraint Simulation**: Simulation of demands using a normal distribution and evaluation of two approaches: return to the depot and assistance from nearby vehicles.
 
-### Resultados
+### Results
 
-- **Instancia 1**: Comparación gráfica de las rutas y las distancias totales recorridas bajo diferentes simulaciones.
-- **Tabla Resumen**: Resumen de las distancias totales recorridas en tres instancias, mostrando la eficiencia de los enfoques implementados.
+- **Instance 1**: Graphical comparison of routes and total distances traveled under different simulations.
+- **Summary Table**: Summary of the total distances traveled across three instances, highlighting the efficiency of the implemented approaches.
 
-### Conclusiones y Futuras Investigaciones
+### Conclusions and Future Research
 
-- La simulación paralela mejora significativamente las soluciones.
-- La asistencia de vehículos cercanos reduce la distancia total recorrida.
-- Contribuciones importantes en la optimización de rutas bajo demandas estocásticas.
-- Propuestas para futuras investigaciones, incluyendo el impacto de diferentes distribuciones de demanda y la aplicación de técnicas de aprendizaje automático.
+- Parallel simulation significantly improves solutions.
+- Assistance from nearby vehicles reduces the total distance traveled.
+- Important contributions to route optimization under stochastic demands.
+- Proposals for future research include analyzing the impact of different demand distributions and applying machine learning techniques.
 
-## Referencias Bibliográficas
+## References
 
 1. Magdalene Marinaki, Andromachi Taxidou, and Yannis Marinakis. “A hybrid Dragonfly algorithm for the vehicle routing problem with stochastic demands”. In: Intelligent Systems with Applications 18 (2023), p. 200225. doi: [https://doi.org/10.1016/j.iswa.2023.200225](https://doi.org/10.1016/j.iswa.2023.200225).
 2. Jorge E. Mendoza and Juan G. Villegas. “A multi-space sampling heuristic for the vehicle routing problem with stochastic demands”. In: Optimization Letters 7 (2013). doi: [https://link.springer.com/article/10.1007/s11590-012-0555-8](https://link.springer.com/article/10.1007/s11590-012-0555-8).
 3. Majid Salavati-Khoshghalb et al. “A hybrid recourse policy for the vehicle routing problem with stochastic demands”. In: EURO Journal on Transportation and Logistics 8.3 (2019), pp. 269–298. doi: [https://doi.org/10.1007/s13676-018-0126-y](https://doi.org/10.1007/s13676-018-0126-y).
-
-
